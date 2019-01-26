@@ -1,0 +1,58 @@
+{
+  "$jason": {
+    "head": {
+      "title": "TemplateReactiveNews",
+	/*the template is designed for any news, text, event pages and websites*/
+      "actions": {
+        "$load":    { "type": "$render" },
+        "navigate": {"type": "$default" }
+      },
+      "templates": {
+        "body": {
+	      	"background": {
+            "type": "html",
+            "url": "http://www.brazuka.ru/",
+            "action": { "trigger": "navigate" }
+				},
+	
+			"footer": {
+				"tabs": {
+					"style": {
+						"background": "#A9A9A9"	},
+						"items": [{
+							"image": "https://img.icons8.com/material-sharp/24/000000/copy-2.png",
+							"text": "Note",
+       						 	"style": {
+         					 	"height": "21"
+								},
+							"url":"https://github.com/DinaDurykina/my_json/blob/master/SevenStringBrazukaFAQ.json"
+								},
+							/*this button takes a copy of the screen and places it in the gallery and in the notes, 
+							places it in the notes together with a link to the page of the site. Lights ie that such a 
+							screen is placed there.*/
+								 {
+							"image": "https://img.icons8.com/material-rounded/24/000000/translation.png",
+							"text": "Translate",
+       						 	"style": {
+         					 	"height": "21"
+								},
+							"url":"https://github.com/DinaDurykina/my_json/blob/master/SevenStringBrazukaVideo.json"
+								},
+							/*this button  when pressed translates the contents of the screen to the language 
+							set by the main on the phone and writes to the toast that translates to such a language.*/
+							 {
+							"image": "https://img.icons8.com/material-rounded/24/000000/comments.png",
+							"text": "Comment",
+       						 	"style": {
+         					 	"height": "21"
+        							},
+							"url":"https://github.com/DinaDurykina/my_json/blob/master/SevenStringBrazukaLogin.json"
+								}]
+							/*this button sends the user directly to the comments to the article, news or website*/
+						}
+					}
+				}
+		}  
+    }   
+  }   
+}

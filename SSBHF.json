@@ -1,0 +1,56 @@
+{
+  "$jason": {
+    "head": {
+      "title": "BRAZUKA",
+      "actions": {
+        "$load":    { "type": "$render" },
+        "navigate": {"type": "$default" }
+      },
+      "templates": {
+        "body": {
+	"header": {
+	"title": {
+	   "type": "image",
+	   "url": "https://icons8.com/icon/83773/меню-2"
+		}
+	    },
+          "background": {
+            "type": "html",
+            "url": "http://www.brazuka.ru/",
+            "action": { "trigger": "navigate" }
+          },
+	
+	"footer": {
+        "tabs": {
+          "style": {
+            "background": "#0033ff"
+					},
+				"items": [{
+					"image": "https://img.icons8.com/material-rounded/24/000000/about.png",
+					"text": "Bonus",
+       						 "style": {
+         					 "height": "21"
+        					},
+					"url":"https://github.com/DinaDurykina/my_json/blob/master/SevenStringBrazukaFAQ.json"
+						}, {
+					"image": "https://img.icons8.com/material-rounded/24/000000/video-gallery.png",
+					"text": "Video",
+       						 "style": {
+         					 "height": "21"
+        					},
+					"url":"https://github.com/DinaDurykina/my_json/blob/master/SevenStringBrazukaVideo.json"
+						}, {
+					"image": "https://img.icons8.com/material-rounded/24/000000/student-registration.png",
+					"text": "Login",
+       						 "style": {
+         					 "height": "21"
+        					},
+					"url":"https://github.com/DinaDurykina/my_json/blob/master/SevenStringBrazukaLogin.json"
+						}]
+					}
+				}
+		}   
+      }  
+    }   
+  }   
+}

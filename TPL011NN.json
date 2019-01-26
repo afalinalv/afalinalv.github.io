@@ -1,0 +1,78 @@
+{
+  "$jason": {
+    "head": {
+      "title": "TemplateNativeNews",
+	/*the template is designed for any news, text, event pages and websites*/
+      "actions": {
+        "$load":    { "type": "$render" },
+        "navigate": {"type": "$default" }
+      },
+      "templates": {
+        "body": {
+	    "header": {		
+			"title": {
+			"type": "image", /*I put the button on which the toolbar for the mobile reporter is called: the camera reads and substitutes gps, 
+					microphone, send to the e-mail address of the site recorded report, which is simultaneously published in the 
+					starting social network on the phone*/
+				"style": {
+					"align": "left",
+					"left": "20",
+					"width": "12",
+					"height": "12"
+							},
+			"url": "https://img.icons8.com/material-rounded/12/000000/squared-menu.png"},
+			"style": {"background": "#A9A9A9"},/*painting the whole top bar.*/
+			"menu": {
+				"text": "Choose",
+				"style": {
+					"color": "#0000ff",
+					"font": "HelveticaNeue-Bold",
+					"size": "12"
+							},
+				"action": {
+					"type": "$util.toast",
+					"options": {
+						"text": "Good job!" 
+								}
+							}
+					}
+				},
+        	"background": {
+				"type": "html",
+				"url": "http://www.brazuka.ru/",
+				"action": { "trigger": "navigate" }
+					},
+	
+		"footer": {
+				"tabs": {
+					"style": {
+						"background": "#A9A9A9"	},
+						"items": [{
+							"image": "https://img.icons8.com/material/18/000000/copy-2.png",
+							"text": "Note",
+       						 "style": {
+         					 "height": "12"
+								},
+							"url":"https://github.com/DinaDurykina/my_json/blob/master/SevenStringBrazukaFAQ.json"
+								}, {
+							"image": "https://img.icons8.com/material-rounded/24/000000/translation.png",
+							"text": "Translate",
+       						 "style": {
+         					 "height": "12"
+								},
+							"url":"https://github.com/DinaDurykina/my_json/blob/master/SevenStringBrazukaVideo.json"
+								}, {
+							"image": "https://img.icons8.com/material-rounded/24/000000/comments.png",
+							"text": "Comment",
+       						 "style": {
+         					 "height": "12"
+        					},
+							"url":"https://github.com/DinaDurykina/my_json/blob/master/SevenStringBrazukaLogin.json"
+								}]
+						}
+					}
+	    }
+      }  
+    }   
+  }  
+}  

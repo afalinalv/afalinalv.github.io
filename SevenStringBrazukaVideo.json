@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "FAQ",
+      "title": "video",
 	    "actions": {
         "$load":    { "type": "$render" },
         "navigate": {"type": "$default" }
@@ -10,11 +10,11 @@
         "body": {
           "background": {
             "type": "html",
-            "url": "http://www.brazuka.ru/akcii/",
+            "url": "https://vk.com/brazukadanceschool?z=video-18284267_456239141%2Fb6e5898b81ac721432%2Fpl_wall_-18284267",
             "action": { "trigger": "navigate" }
          }
         }   
       }   
     }   
-  }
+  }   
 }

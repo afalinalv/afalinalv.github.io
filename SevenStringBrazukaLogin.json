@@ -1,7 +1,7 @@
 {
   "$jason": {
     "head": {
-      "title": "FAQ",
+      "title": "login",
 	    "actions": {
         "$load":    { "type": "$render" },
         "navigate": {"type": "$default" }
@@ -10,11 +10,11 @@
         "body": {
           "background": {
             "type": "html",
-            "url": "http://www.brazuka.ru/akcii/",
+            "url": "http://www.brazuka.ru/kabinet/",
             "action": { "trigger": "navigate" }
          }
         }   
       }   
     }   
-  }
+  }   
 }

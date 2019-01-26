@@ -1,0 +1,98 @@
+{
+  "$jason": {
+    "head": {
+      "title": "TemplateNativeNewsFAB",
+      "actions": {
+        "$load":    { "type": "$render" },
+        "navigate": {"type": "$default" }
+      },
+      "templates": {
+        "body": {
+	    "header": {		
+			"title": {
+			"type": "image",
+				"style": {
+					"align": "left",
+					"left": "20",
+					"width": "12",
+					"height": "12"
+							},
+			"url": "https://img.icons8.com/material-rounded/12/000000/squared-menu.png"},
+			"style": {
+            	"background": "#A9A9A9"
+					},
+			"menu": {
+				"text": "Choose",
+				"style": {
+					"color": "#0000ff",
+					"font": "HelveticaNeue-Bold",
+					"size": "12"
+							},
+				"action": {
+					"type": "$util.toast",
+					"options": {
+						"text": "Good job!"
+								}
+							}
+					}
+				},
+        	"background": {
+				"type": "html",
+				"url": "http://www.brazuka.ru/",
+				"action": { "trigger": "navigate" }
+					},
+		/*floating button on top of the site page*/
+		"layers": [
+            {
+              "type": "image",
+				"url": "https://img.icons8.com/dotty/96/000000/ringer-volume.png",
+              "style": {
+                "bottom": "90",
+                "right": "20",
+                "background": "#ff0000",
+                "color": "#ffffff",
+                "width": "80",
+                "height": "80",
+                "align": "center",
+                /*"size": "30",*/
+                "corner_radius": "50"
+              },
+              "action": {
+                "type": "$back"
+              }
+            }
+          ],
+	
+		"footer": {
+				"tabs": {
+					"style": {
+						"background": "#A9A9A9"	},
+						"items": [{
+							"image": "https://img.icons8.com/material/18/000000/copy-2.png",
+							"text": "Note",
+       						 "style": {
+         					 "height": "12"
+								},
+							"url":"https://github.com/DinaDurykina/my_json/blob/master/SevenStringBrazukaFAQ.json"
+								}, {
+							"image": "https://img.icons8.com/material-rounded/24/000000/translation.png",
+							"text": "Translate",
+       						 "style": {
+         					 "height": "12"
+								},
+							"url":"https://github.com/DinaDurykina/my_json/blob/master/SevenStringBrazukaVideo.json"
+								}, {
+							"image": "https://img.icons8.com/material-rounded/24/000000/comments.png",
+							"text": "Comment",
+       						 "style": {
+         					 "height": "12"
+        					},
+							"url":"https://github.com/DinaDurykina/my_json/blob/master/SevenStringBrazukaLogin.json"
+								}]
+						}
+					}
+	    }
+      }  
+    }   
+  }  
+}  
