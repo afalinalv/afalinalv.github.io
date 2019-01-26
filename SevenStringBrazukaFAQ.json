@@ -1,0 +1,20 @@
+{
+  "$jason": {
+    "head": {
+      "title": "FAQ",
+      "actions": {
+        "$load":    { "type": "$render" },
+        "navigate": {"type": "$default" }
+      },
+      "templates": {
+        "body": {
+          "background": {
+            "type": "html",
+            "url": "http://www.brazuka.ru/akcii/",
+            "action": { "trigger": "navigate" }
+          }
+        }
+      }
+    }
+  }
+}
