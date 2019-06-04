@@ -1,0 +1,15 @@
+{
+  "$jason": {
+    "head": {
+      "title": "wrap",
+      "actions": { "$load": { "type": "$render" } }
+    },
+        "body": {
+          "background": {
+            "type": "html",
+            "url": "http://####.###/",
+            "action": { "type": "$default" }
+          }
+        }
+  }
+}   
